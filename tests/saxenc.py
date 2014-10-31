@@ -1,6 +1,6 @@
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the (LGPL) GNU Lesser General Public License as
-# published by the Free Software Foundation; either version 3 of the 
+# published by the Free Software Foundation; either version 3 of the
 # License, or (at your option) any later version.
 #
 # This program is distributed in the hope that it will be useful,
@@ -20,6 +20,7 @@
 
 from suds.sax.element import Element
 from suds.sax.parser import Parser
+
 
 def basic():
     xml = "<a>Me &amp;&amp; &lt;b&gt;my&lt;/b&gt; shadow&apos;s &lt;i&gt;dog&lt;/i&gt; love to &apos;play&apos; and sing &quot;la,la,la&quot;;</a>"
@@ -42,6 +43,7 @@ def basic():
     print j
     j.prune()
     print j
+
 
 def cdata():
     xml = '<a><![CDATA[<b>This is my &amp;&lt;tag&gt;</b>]]></a>'
